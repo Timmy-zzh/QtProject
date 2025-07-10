@@ -6,6 +6,9 @@ build-*/
 *.pro.user
 *.autosave
 
+CMakeLists.txt.user
+CMakeLists.txt.user.*
+
 # 编译生成文件
 *.o
 *.a
