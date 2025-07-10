@@ -1,0 +1,24 @@
+bin
+build-aarch64
+
+# Qt 相关
+build-*/
+*.pro.user
+*.autosave
+
+# 编译生成文件
+*.o
+*.a
+*.so
+*.dll
+*.exe
+
+# 构建目录
+build/
+*/build/
+
+# IDE 文件
+.vscode/
+.idea/
+*.swp
+*.swo
