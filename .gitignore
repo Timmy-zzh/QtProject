@@ -19,6 +19,7 @@ CMakeLists.txt.user.*
 # 构建目录
 build/
 */build/
+# output/
 
 # IDE 文件
 .vscode/
