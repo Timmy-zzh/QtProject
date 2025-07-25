@@ -3,5 +3,7 @@
         <file>Main.qml</file>
         <file>qml/HomePage.qml</file>
         <file>qml/SecondPage.qml</file>
+        <file>qml/ItemPage.qml</file>
+        <file>qml/RectanglePage.qml</file>
     </qresource>
 </RCC>

@@ -3,6 +3,33 @@ import QtQuick.Controls
 import QtQuick.Layouts
 import "./qml"
 
+// ApplicationWindow {
+//     id: mainWindow
+
+//     height: 600
+//     visible: true  // 默认为false，必须设置为 true 才能显示窗口
+//     width: 800
+
+//     Component {
+//         id: mainPage
+
+//         HomePage {
+//         }
+//     }
+//     Component {
+//         id: secondPage
+
+//         SecondPage {
+//         }
+//     }
+//     StackView {
+//         id: stackView
+
+//         anchors.fill: parent
+//         initialItem: mainPage
+//     }
+// }
+
 ApplicationWindow {
     id: mainWindow
 
