@@ -1,7 +1,7 @@
 import QtQuick
 import QtQuick.Controls
 import QtQuick.Layouts
-import "./qml"
+import "./control"
 
 // ApplicationWindow {
 //     id: mainWindow
@@ -45,9 +45,9 @@ ApplicationWindow {
     y: 50
 
     Component {
-        id: mainPage
+        id: controlPage
 
-        HomePage {
+        ControlPage_00 {
         }
     }
     Component {
@@ -60,7 +60,7 @@ ApplicationWindow {
         id: stackView
 
         anchors.fill: parent
-        initialItem: mainPage
+        initialItem: controlPage
 
         /**
         当调用 stackView.pop() 返回时，有两个页面参与过渡：

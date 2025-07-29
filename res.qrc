@@ -1,9 +1,15 @@
 <RCC>
     <qresource prefix="/">
         <file>Main.qml</file>
-        <file>qml/HomePage.qml</file>
-        <file>qml/SecondPage.qml</file>
-        <file>qml/ItemPage.qml</file>
-        <file>qml/RectanglePage.qml</file>
+        <file>control/ControlPage_00.qml</file>
+        <file>control/ItemPage_01.qml</file>
+        <file>control/RectanglePage_02.qml</file>
+        <file>control/ComponentPage_03.qml</file>
+        
+        <file>control/SecondPage.qml</file>
+    </qresource>
+
+    <qresource prefix="/">
+        <file>widget/TitleBar.qml</file>
     </qresource>
 </RCC>

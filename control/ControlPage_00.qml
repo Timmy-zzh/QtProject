@@ -2,17 +2,34 @@ import QtQuick
 import QtQuick.Controls
 import QtQuick.Layouts
 
+/**
+ * 控件列表：
+ * 1. Item
+ * 2. Rectangle
+ * 3. Component
+ *
+ */
 Item {
+    // Item
     Component {
         id: itemPage
 
-        ItemPage {
+        ItemPage_01 {
         }
     }
+    // Rectangle
     Component {
         id: rectanglePage
 
-        RectanglePage {
+        RectanglePage_02 {
+        }
+    }
+
+    // Component， ComponentPage.qml页面的内容，放到Component中了
+    Component {
+        id: componentPage
+
+        ComponentPage_03 {
         }
     }
     ColumnLayout {
@@ -42,6 +59,14 @@ Item {
 
             onClicked: stackView.push(rectanglePage)
         }
+        Button {
+            height: 50
+            text: qsTr("Component Page")
+            width: 100
+
+            onClicked: stackView.push(componentPage)
+        }
+        // 滑动
         Button {
             height: 50
             text: qsTr("ScrollView Page")
