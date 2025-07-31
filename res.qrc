@@ -5,6 +5,7 @@
         <file>control/ItemPage_01.qml</file>
         <file>control/RectanglePage_02.qml</file>
         <file>control/ComponentPage_03.qml</file>
+        <file>control/LoaderPage_04.qml</file>
         
         <file>control/SecondPage.qml</file>
     </qresource>

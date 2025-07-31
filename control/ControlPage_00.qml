@@ -32,6 +32,14 @@ Item {
         ComponentPage_03 {
         }
     }
+
+    // Loader
+    Component {
+        id: loaderPage
+
+        LoaderPage_04 {
+        }
+    }
     ColumnLayout {
         anchors.fill: parent
         spacing: 10
@@ -65,6 +73,13 @@ Item {
             width: 100
 
             onClicked: stackView.push(componentPage)
+        }
+        Button {
+            height: 50
+            text: qsTr("Loader Page")
+            width: 100
+
+            onClicked: stackView.push(loaderPage)
         }
         // 滑动
         Button {
