@@ -14,7 +14,7 @@ Item {
         console.log("ComponentPage Completed");
 
         // 通过createComponent方法，创建组件实例
-        var component = Qt.createComponent("qrc:/widget/TitleBar.qml");
+        var component = Qt.createComponent("qrc:/qml/widget/TitleBar.qml");
         if (component.status === Component.Ready) {
             var instance = component.createObject(root, {
                 titleText: qsTr("Dynamic Title Bar"),

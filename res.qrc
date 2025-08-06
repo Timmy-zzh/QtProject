@@ -1,19 +1,19 @@
 <RCC>
     <qresource prefix="/">
-        <file>Main.qml</file>
-        <file>control/ControlPage_00.qml</file>
-        <file>control/ItemPage_01.qml</file>
-        <file>control/RectanglePage_02.qml</file>
-        <file>control/ComponentPage_03.qml</file>
-        <file>control/LoaderPage_04.qml</file>
-        <file>control/ImagePage_05.qml</file>
+        <file>qml/Main.qml</file>
+        <file>qml/control/ControlPage_00.qml</file>
+        <file>qml/control/ItemPage_01.qml</file>
+        <file>qml/control/RectanglePage_02.qml</file>
+        <file>qml/control/ComponentPage_03.qml</file>
+        <file>qml/control/LoaderPage_04.qml</file>
+        <file>qml/control/ImagePage_05.qml</file>
         
-        <file>control/SecondPage.qml</file>
+        <file>qml/control/SecondPage.qml</file>
     </qresource>
 
     <qresource prefix="/">
-        <file>widget/TitleBar.qml</file>
-        <file>widget/RoundImage.qml</file>
+        <file>qml/widget/TitleBar.qml</file>
+        <file>qml/widget/RoundImage.qml</file>
     </qresource>
 
     <qresource prefix="/image">

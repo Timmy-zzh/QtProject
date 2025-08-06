@@ -112,7 +112,7 @@ Item {
 
                     active: true  // 激活Loader(默认true)
                     asynchronous: true  // 异步加载(默认false)
-                    source: "qrc:/widget/TitleBar.qml"
+                    source: "qrc:/qml/widget/TitleBar.qml"
                     sourceComponent: null  // source和sourceComponent不能同时使用
 
                     width: parent.width
