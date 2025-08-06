@@ -6,11 +6,17 @@
         <file>control/RectanglePage_02.qml</file>
         <file>control/ComponentPage_03.qml</file>
         <file>control/LoaderPage_04.qml</file>
+        <file>control/ImagePage_05.qml</file>
         
         <file>control/SecondPage.qml</file>
     </qresource>
 
     <qresource prefix="/">
         <file>widget/TitleBar.qml</file>
+        <file>widget/RoundImage.qml</file>
+    </qresource>
+
+    <qresource prefix="/image">
+        <file>res/image/img_sky.jpg</file>
     </qresource>
 </RCC>

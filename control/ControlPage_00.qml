@@ -7,7 +7,12 @@ import QtQuick.Layouts
  * 1. Item
  * 2. Rectangle
  * 3. Component
- *
+ * 4. Loader
+ * 5. Image
+ * 6。Text
+ * 7. Button
+ * 8. Row RowLayout
+ * 9. Column ColumnLayout
  */
 Item {
     // Item
@@ -40,6 +45,14 @@ Item {
         LoaderPage_04 {
         }
     }
+
+    // Image
+    Component {
+        id: imagePage
+
+        ImagePage_05 {
+        }
+    }
     ColumnLayout {
         anchors.fill: parent
         spacing: 10
@@ -55,31 +68,38 @@ Item {
         }
         Button {
             height: 50
-            text: qsTr("Item Page")
+            text: qsTr("1. Item")
             width: 100
 
             onClicked: stackView.push(itemPage)
         }
         Button {
             height: 50
-            text: qsTr("Rectangle Page")
+            text: qsTr("2. Rectangle")
             width: 100
 
             onClicked: stackView.push(rectanglePage)
         }
         Button {
             height: 50
-            text: qsTr("Component Page")
+            text: qsTr("3. Component")
             width: 100
 
             onClicked: stackView.push(componentPage)
         }
         Button {
             height: 50
-            text: qsTr("Loader Page")
+            text: qsTr("4. Loader")
             width: 100
 
             onClicked: stackView.push(loaderPage)
+        }
+        Button {
+            height: 50
+            text: qsTr("5. Image")
+            width: 100
+
+            onClicked: stackView.push(imagePage)
         }
         // 滑动
         Button {
