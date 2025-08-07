@@ -53,6 +53,16 @@ Item {
         ImagePage_05 {
         }
     }
+
+    // Text
+    Component {
+        id: textPage
+
+        TextPage_06 {
+        }
+    }
+
+    // Content
     ColumnLayout {
         anchors.fill: parent
         spacing: 10
@@ -101,20 +111,12 @@ Item {
 
             onClicked: stackView.push(imagePage)
         }
-        // 滑动
         Button {
             height: 50
-            text: qsTr("ScrollView Page")
+            text: qsTr("6. Text")
             width: 100
 
-            onClicked: stackView.push(itemPage)
-        }
-        Button {
-            height: 50
-            text: qsTr("Row and Column Page")
-            width: 100
-
-            onClicked: stackView.push(itemPage)
+            onClicked: stackView.push(textPage)
         }
     }
 }
