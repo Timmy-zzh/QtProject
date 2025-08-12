@@ -8,6 +8,8 @@
         <file>qml/control/LoaderPage_04.qml</file>
         <file>qml/control/ImagePage_05.qml</file>
         <file>qml/control/TextPage_06.qml</file>
+        <file>qml/control/ButtonPage_07.qml</file>
+        <file>qml/control/RowLayoutPage_08.qml</file>
         
         <file>qml/control/SecondPage.qml</file>
     </qresource>

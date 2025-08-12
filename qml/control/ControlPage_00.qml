@@ -62,6 +62,22 @@ Item {
         }
     }
 
+    // Button
+    Component {
+        id: buttonPage
+
+        ButtonPage_07 {
+        }
+    }
+
+    // Row RowLayout
+    Component {
+        id: rowLayoutPage
+
+        RowLayoutPage_08 {
+        }
+    }
+
     // Content
     ColumnLayout {
         anchors.fill: parent
@@ -117,6 +133,20 @@ Item {
             width: 100
 
             onClicked: stackView.push(textPage)
+        }
+        Button {
+            height: 50
+            text: qsTr("7. Button")
+            width: 100
+
+            onClicked: stackView.push(buttonPage)
+        }
+        Button {
+            height: 50
+            text: qsTr("8. Row RowLayout")
+            width: 100
+
+            onClicked: stackView.push(rowLayoutPage)
         }
     }
 }
