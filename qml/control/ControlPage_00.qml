@@ -78,75 +78,109 @@ Item {
         }
     }
 
-    // Content
-    ColumnLayout {
-        anchors.fill: parent
-        spacing: 10
+    // -------------- 动画 --------------
+    Component {
+        id: animationPage
 
-        Text {
-            font.pointSize: 20
-            horizontalAlignment: Text.AlignHCenter
-            text: qsTr("Welcome to QtProjectApp")
+        AnimationPage_09 {
         }
-        Text {
-            font.pointSize: 20
-            text: qsTr("----------- View List -----------")
-        }
-        Button {
-            height: 50
-            text: qsTr("1. Item")
-            width: 100
+    }
 
-            onClicked: stackView.push(itemPage)
-        }
-        Button {
-            height: 50
-            text: qsTr("2. Rectangle")
-            width: 100
+    ScrollView {
+        clip: true
+        height: parent.height
+        width: parent.width
 
-            onClicked: stackView.push(rectanglePage)
+        anchors {
+            bottom: parent.bottom
+            left: parent.left
+            // leftMargin: 20
+            right: parent.right
+            top: parent.top
+            topMargin: 50
         }
-        Button {
-            height: 50
-            text: qsTr("3. Component")
-            width: 100
+        // Content
 
-            onClicked: stackView.push(componentPage)
-        }
-        Button {
-            height: 50
-            text: qsTr("4. Loader")
-            width: 100
+        Column {
+            anchors.fill: parent
+            spacing: 10
 
-            onClicked: stackView.push(loaderPage)
-        }
-        Button {
-            height: 50
-            text: qsTr("5. Image")
-            width: 100
+            Text {
+                font.pointSize: 20
+                horizontalAlignment: Text.AlignHCenter
+                text: qsTr("Welcome to QtProjectApp")
+            }
+            Text {
+                font.pointSize: 20
+                text: qsTr("----------- View List -----------")
+            }
+            Button {
+                height: 50
+                text: qsTr("1. Item")
+                width: 200
 
-            onClicked: stackView.push(imagePage)
-        }
-        Button {
-            height: 50
-            text: qsTr("6. Text")
-            width: 100
+                onClicked: stackView.push(itemPage)
+            }
+            Button {
+                height: 50
+                text: qsTr("2. Rectangle")
+                width: 200
 
-            onClicked: stackView.push(textPage)
-        }
-        Button {
-            height: 50
-            text: qsTr("7. Button")
-            width: 100
+                onClicked: stackView.push(rectanglePage)
+            }
+            Button {
+                height: 50
+                text: qsTr("3. Component")
+                width: 200
 
-            onClicked: stackView.push(buttonPage)
-        }
-        Button {
-            height: 50
-            text: qsTr("8. Row RowLayout")
-            width: 100
+                onClicked: stackView.push(componentPage)
+            }
+            Button {
+                height: 50
+                text: qsTr("4. Loader")
+                width: 200
 
-            onClicked: stackView.push(rowLayoutPage)
+                onClicked: stackView.push(loaderPage)
+            }
+            Button {
+                height: 50
+                text: qsTr("5. Image")
+                width: 200
+
+                onClicked: stackView.push(imagePage)
+            }
+            Button {
+                height: 50
+                text: qsTr("6. Text")
+                width: 200
+
+                onClicked: stackView.push(textPage)
+            }
+            Button {
+                height: 50
+                text: qsTr("7. Button")
+                width: 200
+
+                onClicked: stackView.push(buttonPage)
+            }
+            Button {
+                height: 50
+                text: qsTr("8. Row RowLayout")
+                width: 200
+
+                onClicked: stackView.push(rowLayoutPage)
+            }
+            Text {
+                font.pointSize: 20
+                text: qsTr("----------- 动画 -----------")
+            }
+            Button {
+                height: 50
+                text: qsTr("Animation 使用")
+                width: 200
+
+                onClicked: stackView.push(animationPage)
+            }
         }
     }
 }

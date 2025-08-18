@@ -11,6 +11,7 @@
         <file>qml/control/ButtonPage_07.qml</file>
         <file>qml/control/RowLayoutPage_08.qml</file>
         
+        <file>qml/control/AnimationPage_09.qml</file>
         <file>qml/control/SecondPage.qml</file>
     </qresource>
 
@@ -19,6 +20,7 @@
         <file>qml/widget/RoundImage.qml</file>
         <file>qml/widget/CommonMarquee.qml</file>
         <file>qml/widget/SeamlessMarquee.qml</file>
+        <file>qml/widget/AnimButton.qml</file>
     </qresource>
 
     <qresource prefix="/image">
