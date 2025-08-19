@@ -10,8 +10,11 @@
         <file>qml/control/TextPage_06.qml</file>
         <file>qml/control/ButtonPage_07.qml</file>
         <file>qml/control/RowLayoutPage_08.qml</file>
-        
+        <!-- 动画 -->
         <file>qml/control/AnimationPage_09.qml</file>
+        <!-- 倒计时 -->
+        <file>qml/control/TimerPage_10.qml</file>
+
         <file>qml/control/SecondPage.qml</file>
     </qresource>
 

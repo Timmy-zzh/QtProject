@@ -86,6 +86,13 @@ Item {
         }
     }
 
+    // -------------- 倒计时 Timer --------------
+    Component {
+        id: timerPage
+
+        TimerPage_10 {
+        }
+    }
     ScrollView {
         clip: true
         height: parent.height
@@ -180,6 +187,17 @@ Item {
                 width: 200
 
                 onClicked: stackView.push(animationPage)
+            }
+            Text {
+                font.pointSize: 20
+                text: qsTr("----------- 倒计时 Timer -----------")
+            }
+            Button {
+                height: 50
+                text: qsTr("倒计时 Timer 使用")
+                width: 200
+
+                onClicked: stackView.push(timerPage)
             }
         }
     }
