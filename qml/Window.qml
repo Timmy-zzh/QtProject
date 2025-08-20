@@ -45,22 +45,16 @@ ApplicationWindow {
     y: 50
 
     Component {
-        id: controlPage
+        id: homePage
 
-        ControlPage_00 {
-        }
-    }
-    Component {
-        id: secondPage
-
-        SecondPage {
+        HomePage {
         }
     }
     StackView {
         id: stackView
 
         anchors.fill: parent
-        initialItem: controlPage
+        initialItem: homePage
 
         /**
         当调用 stackView.pop() 返回时，有两个页面参与过渡：

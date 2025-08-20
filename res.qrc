@@ -1,6 +1,7 @@
 <RCC>
     <qresource prefix="/">
-        <file>qml/Main.qml</file>
+        <file>qml/Window.qml</file>
+        <file>qml/HomePage.qml</file>
         <file>qml/control/ControlPage_00.qml</file>
         <file>qml/control/ItemPage_01.qml</file>
         <file>qml/control/RectanglePage_02.qml</file>
@@ -14,6 +15,9 @@
         <file>qml/control/AnimationPage_09.qml</file>
         <!-- 倒计时 -->
         <file>qml/control/TimerPage_10.qml</file>
+
+        <!-- cpp与qml交互 -->
+        <file>qml/inherit/InheritPage_00.qml</file>
 
         <file>qml/control/SecondPage.qml</file>
     </qresource>

@@ -15,7 +15,7 @@ int main(int argc, char *argv[])
         Qt::QueuedConnection);
     // engine.loadFromModule("QtProject", "Main");
 
-    engine.load(QUrl(QStringLiteral("qrc:/qml/Main.qml")));
+    engine.load(QUrl(QStringLiteral("qrc:/qml/Window.qml")));
 
     return app.exec();
 }

@@ -2,6 +2,8 @@ import QtQuick
 import QtQuick.Controls
 import QtQuick.Layouts
 
+import "../widget" // 引入widget目录下的组件
+
 /**
  * 控件列表：
  * 1. Item
@@ -92,6 +94,11 @@ Item {
 
         TimerPage_10 {
         }
+    }
+    TitleBar {
+        id: titleBar
+
+        titleText: qsTr("Control Page")
     }
     ScrollView {
         clip: true
