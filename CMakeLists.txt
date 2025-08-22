@@ -35,11 +35,21 @@ find_package(Qt6 6.5 REQUIRED COMPONENTS Quick)
 # 设置Qt的标准项目设置
 qt_standard_project_setup(REQUIRES 6.5)
 
+# 设置包含的头文件路径
+include_directories(
+    ${CMAKE_CURRENT_SOURCE_DIR}/src/inherit
+)
+
+# 添加可执行文件的源代码路径
+set(SRC_FILES
+    src/inherit/DataManager.h  src/inherit/DataManager.cpp
+)
+
 # 可执行文件配置，可执行文件名称为QtProject，源文件为main.cpp
 # 后面有添加的.cpp .h文件，也在此处添加
 qt_add_executable(${PROJECT_NAME}
     main.cpp
-    # res.qrc # 资源文件，包含QML文件
+    ${SRC_FILES} # 添加源代码文件
 )
 
 # ？如何在CMake文件中进行属性变量的打印

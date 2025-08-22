@@ -12,6 +12,12 @@ Item {
     height: 600
     width: 800
 
+    Component {
+        id: qmlRegisterTypePage
+
+        QmlRegisterTypePage_01 {
+        }
+    }
     TitleBar {
         id: titleBar
 
@@ -39,9 +45,17 @@ Item {
                 left: parent.left
                 leftMargin: 20
             }
-            Text {
-                font.pointSize: 16
-                text: qsTr("Cpp与QML交互集成")
+            AnimButton {
+                id: animButton
+
+                height: 50
+                text: qsTr("使用 qmlRegisterType 实现方式")
+                width: 300
+
+                onBtnClicked: {
+                    console.log("onBtnClicked - 使用 qmlRegisterType 实现方式");
+                    stackView.push(qmlRegisterTypePage);
+                }
             }
         }
     }

@@ -1,4 +1,5 @@
 <RCC>
+    <!-- 页面 -->
     <qresource prefix="/">
         <file>qml/Window.qml</file>
         <file>qml/HomePage.qml</file>
@@ -18,10 +19,12 @@
 
         <!-- cpp与qml交互 -->
         <file>qml/inherit/InheritPage_00.qml</file>
+        <file>qml/inherit/QmlRegisterTypePage_01.qml</file>
 
         <file>qml/control/SecondPage.qml</file>
     </qresource>
 
+    <!-- 自定义控件 -->
     <qresource prefix="/">
         <file>qml/widget/TitleBar.qml</file>
         <file>qml/widget/RoundImage.qml</file>
@@ -30,6 +33,7 @@
         <file>qml/widget/AnimButton.qml</file>
     </qresource>
 
+    <!-- 资源-图片 -->
     <qresource prefix="/image">
         <file>res/image/img_sky.jpg</file>
     </qresource>
