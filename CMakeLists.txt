@@ -43,6 +43,8 @@ include_directories(
 # 添加可执行文件的源代码路径
 set(SRC_FILES
     src/inherit/DataManager.h  src/inherit/DataManager.cpp
+    src/inherit/Person.h      src/inherit/Person.cpp
+    src/inherit/data_view_model.h  src/inherit/data_view_model.cpp
 )
 
 # 可执行文件配置，可执行文件名称为QtProject，源文件为main.cpp
@@ -50,6 +52,7 @@ set(SRC_FILES
 qt_add_executable(${PROJECT_NAME}
     main.cpp
     ${SRC_FILES} # 添加源代码文件
+    res.qrc
 )
 
 # ？如何在CMake文件中进行属性变量的打印
@@ -61,12 +64,15 @@ qt_add_executable(${PROJECT_NAME}
 # 为项目QtProject添加QML模块支持，QML的URI为QtProject，版本为1.0
 # URI是qml模块的唯一标识符，当设置C++与qml交互时需要使用到
 # QML_FILES指定了QML文件的路径
+# ${SRC_FILES}
 qt_add_qml_module(${PROJECT_NAME}
-    URI QtProject
+    URI com.timmy.qml
     VERSION 1.0
     # QML_FILES
     #     Main.qml
     RESOURCES res.qrc
+    SOURCES 
+    src/inherit/data_view_model.cpp
 )
 
 # 设置其他平台的属性，macOS和Windows平台的属性

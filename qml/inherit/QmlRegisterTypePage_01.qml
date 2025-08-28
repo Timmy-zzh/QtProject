@@ -39,23 +39,23 @@ Item {
     }
 
     // C++类的实例
-    DataManager {
-        id: dataManager
+    // DataManager {
+    //     id: dataManager
 
-        // 方式2：槽函数,这样也可以获取信号函数的回调
-        onCurrTimerChanged: function (currTimer) {
-            console.log("DataManager - onCurrTimerChanged - 当前倒计时：" + currTimer);
-            // 更新QML界面上的文本
-            tvTime.text = qsTr("倒计时时间：") + currTimer;
-        }
+    //     // 方式2：槽函数,这样也可以获取信号函数的回调
+    //     onCurrTimerChanged: function (currTimer) {
+    //         console.log("DataManager - onCurrTimerChanged - 当前倒计时：" + currTimer);
+    //         // 更新QML界面上的文本
+    //         tvTime.text = qsTr("倒计时时间：") + currTimer;
+    //     }
 
-        // 方式3：不会调用，是普通的JavaScript函数,不会用于绑定信号到槽函数
-        // function onCurrTimerChanged(currTimer) {
-        //     console.log("DataManager - onCurrTimerChanged - 当前倒计时：" + currTimer);
-        //     // 更新QML界面上的文本
-        //     tvTime.text = qsTr("倒计时时间：") + currTimer;
-        // }
-    }
+    //     // 方式3：不会调用，是普通的JavaScript函数,不会用于绑定信号到槽函数
+    //     // function onCurrTimerChanged(currTimer) {
+    //     //     console.log("DataManager - onCurrTimerChanged - 当前倒计时：" + currTimer);
+    //     //     // 更新QML界面上的文本
+    //     //     tvTime.text = qsTr("倒计时时间：") + currTimer;
+    //     // }
+    // }
 
     // 方式1：连接，信号与槽函数
     // Connections {

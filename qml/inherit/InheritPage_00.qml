@@ -18,6 +18,12 @@ Item {
         QmlRegisterTypePage_01 {
         }
     }
+    Component {
+        id: qmlElementPage
+
+        QmlElementPage_02 {
+        }
+    }
     TitleBar {
         id: titleBar
 
@@ -55,6 +61,18 @@ Item {
                 onBtnClicked: {
                     console.log("onBtnClicked - 使用 qmlRegisterType 实现方式");
                     stackView.push(qmlRegisterTypePage);
+                }
+            }
+            AnimButton {
+                id: animButton2
+
+                height: 50
+                text: qsTr("使用 QML_ELEMENT  实现方式")
+                width: 300
+
+                onBtnClicked: {
+                    console.log("onBtnClicked - 使用 QML_ELEMENT  实现方式");
+                    stackView.push(qmlElementPage);
                 }
             }
         }

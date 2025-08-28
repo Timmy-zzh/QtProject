@@ -20,6 +20,7 @@
         <!-- cpp与qml交互 -->
         <file>qml/inherit/InheritPage_00.qml</file>
         <file>qml/inherit/QmlRegisterTypePage_01.qml</file>
+        <file>qml/inherit/QmlElementPage_02.qml</file>
 
         <file>qml/control/SecondPage.qml</file>
     </qresource>
